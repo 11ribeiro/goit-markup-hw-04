@@ -1,5 +1,6 @@
 /* ================================COMMON STYLES============================== */
 :root {
+  --main-bc-color: rgba(46, 47, 66, 0.7);
   --color-blue: #4d5ae5;
   --color-navy: #2e2f42;
   --color-hover: #404bbf;
@@ -139,7 +140,8 @@ address {
 /* ===============================HERO SECTION================================ */
 
 .hero {
-  background-color: var(--color-navy);
+  background: rgba(46, 47, 66, 0.7) url(../images/people-in-office.jpg)
+    no-repeat center center;
   padding: 188px 0;
 }
 .hero-text {
