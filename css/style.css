@@ -1,0 +1,348 @@
+/* ================================COMMON STYLES============================== */
+:root {
+  --color-blue: #4d5ae5;
+  --color-navy: #2e2f42;
+  --color-hover: #404bbf;
+  --color-white: #fff;
+  --color-grey: #434455;
+  --ghost-white: #f4f4fd;
+  --card-set-gap: 24px; /* Gap between cards */
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-grey);
+  background-color: var(--color-white);
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1158px;
+  padding: 0 15px;
+}
+
+/* ===============================/COMMON STYLES============================== */
+
+/* =====================================HEADER================================ */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* =================================NAVIGATION================================ */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logo-head {
+  margin-right: 76px;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+.link {
+  text-decoration: none;
+}
+.link-hover:hover,
+.link-hover:focus,
+.contacts:hover,
+.contacts:focus {
+  color: var(--color-hover);
+}
+
+.logo-header {
+  color: var(--color-navy);
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.list {
+  list-style: none;
+  font-weight: 500;
+}
+
+.nav {
+  display: block;
+  color: var(--color-navy);
+  padding: 24px 0;
+}
+/* ================================/NAVIGATION================================ */
+/* ====================================ADDRESS================================ */
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.contact {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--color-grey);
+  display: block;
+  padding: 24px 0;
+}
+/* ===================================/ADDRESS================================ */
+/* ====================================/HEADER================================ */
+
+/* =====================================MAIN================================== */
+/* ===============================HERO SECTION================================ */
+
+.hero {
+  background-color: var(--color-navy);
+  padding: 188px 0;
+}
+.hero-text {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+
+  text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+.primary-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  font-family: "Roboto", sans-serif;
+
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  min-height: 56px;
+}
+.primary-btn:hover,
+.primary-btn:focus {
+  background-color: var(--color-hover);
+}
+/* ===============================/HERO SECTION================================ */
+/* ==========================ADVANTAGES SECTION================================ */
+
+.advantages {
+  padding: 120px 0;
+}
+.adv-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.adv-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.main-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+.main-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  font-weight: 400;
+}
+/* =========================/ADVANTAGES SECTION================================ */
+/* ==========================FEATURES SECTION================================ */
+
+.features {
+  padding-bottom: 120px;
+}
+.features-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-navy);
+  margin-bottom: 72px;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.feat-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+/* ==========================/FEATURES SECTION================================ */
+/* ===============================TEAM SECTION================================ */
+
+.team {
+  background-color: var(--ghost-white);
+  padding: 120px 0;
+}
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-navy);
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.team-list-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color-white);
+  flex-basis: calc((100% - 72px) / 4);
+}
+.team-card-content {
+  text-align: center;
+  padding: 32px 16px;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  font-weight: 400;
+}
+/* ===============================/TEAM SECTION================================ */
+
+/* ======================================FOOTER================================ */
+
+.footer {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--ghost-white);
+  background-color: var(--color-navy);
+  padding: 100px 0;
+}
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.logo-footer {
+  color: var(--ghost-white);
+}
+.footer-text {
+  max-width: 264px;
+}
+/* =====================================/FOOTER================================ */
+
+/* ================================PORTFOLIO PAGE============================== */
+.portfolio-section {
+  padding: 96px 0 120px 0;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.filter-btn {
+  font-family: "Roboto", Sans-serif;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-blue);
+  background-color: var(--ghost-white);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  display: block;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--color-white);
+  background-color: var(--color-hover);
+  border: 1px solid transparent;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.benefits-card-content {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+/* ==============================/PORTFOLIO PAGE============================== */
