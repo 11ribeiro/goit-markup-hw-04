@@ -345,22 +345,13 @@ address {
   fill: currentColor;
 }
 
-.customers-link:hover {
-  border-color: #404bbf;
-  color: #404bbf;
-}
+.customers-link:hover,
 .customers-link:focus {
   border-color: #404bbf;
   color: #404bbf;
 }
-.customers-link {
-  color: var(--color-hover);
-}
 .customers-icon {
   fill: currentColor;
-}
-.footer-icon {
-  fill: var(--ghost-white);
 }
 
 /* ==============================/CUSTOMERS SECTION============================ */
@@ -409,6 +400,9 @@ address {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--footer-hover);
+}
+.footer-icon {
+  fill: var(--ghost-white);
 }
 
 /* =====================================/FOOTER================================ */
