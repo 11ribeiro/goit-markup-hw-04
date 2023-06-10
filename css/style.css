@@ -7,7 +7,8 @@
   --color-white: #fff;
   --color-grey: #434455;
   --ghost-white: #f4f4fd;
-  --card-set-gap: 24px; /* Gap between cards */
+  --border-color: #8e8f99;
+  --footer-hover: #31d0aa;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -84,6 +85,8 @@ address {
   border-bottom: 1px solid #e7e9fc;
   max-width: 1440px;
   margin: 0 auto;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -162,7 +165,10 @@ address {
 
 .hero {
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-in-office.jpg) no-repeat center;
+    url(../images/people-in-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
   max-width: 1440px;
   margin: 0 auto;
@@ -192,7 +198,9 @@ address {
   min-height: 56px;
 }
 .primary-btn:hover,
-.primary-btn:focus {
+.primary-btn:focus,
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: var(--color-hover);
 }
 /* ===============================/HERO SECTION================================ */
@@ -305,6 +313,9 @@ address {
   justify-content: center;
   align-items: center;
 }
+.team-social-icon {
+  fill: var(--ghost-white);
+}
 /* ===============================/TEAM SECTION================================ */
 
 /* ===============================CUSTOMERS SECTION============================ */
@@ -313,21 +324,45 @@ address {
 }
 .customers-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  max-width: 1128px;
   gap: 24px;
 }
 .customers-links {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
   height: 88px;
   flex-basis: calc((100% - 120px) / 6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+.customers-link {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--border-color);
+  fill: currentColor;
+}
+
+.customers-link:hover {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.customers-link {
+  color: var(--color-hover);
+}
+.customers-icon {
+  fill: currentColor;
+}
+.footer-icon {
+  fill: var(--ghost-white);
+}
+
 /* ==============================/CUSTOMERS SECTION============================ */
 /* ======================================FOOTER================================ */
 
@@ -341,16 +376,22 @@ address {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-signature {
   max-width: 264px;
   max-height: 112px;
   margin-right: 120px;
 }
-.footer-logo-link,
-.social-text-footer {
+.footer-logo-link {
   display: block;
   margin-bottom: 16px;
+  color: var(--color-blue);
+}
+.social-text-footer {
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: var(--color-white);
 }
 .logo-footer {
   color: var(--ghost-white);
@@ -365,6 +406,11 @@ address {
 .social-footer {
   gap: 16px;
 }
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--footer-hover);
+}
+
 /* =====================================/FOOTER================================ */
 
 /* ================================PORTFOLIO PAGE============================== */
@@ -393,6 +439,8 @@ address {
   color: var(--color-white);
   background-color: var(--color-hover);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .benefits-list {
@@ -401,6 +449,14 @@ address {
   justify-content: center;
   flex-wrap: wrap;
   gap: 48px 24px;
+}
+.benefits-link {
+  display: block;
+}
+.benefits-link:hover,
+.benefits-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .benefits-card-content {
   border: 1px solid #e7e9fc;
