@@ -58,12 +58,32 @@ address {
   max-width: 1158px;
   padding: 0 15px;
 }
-
+.page-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-navy);
+  margin-bottom: 72px;
+}
+.primary-btn,
+.filter.btn,
+.social-text-footer,
+.nav-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
 /* ===============================/COMMON STYLES============================== */
 
 /* =====================================HEADER================================ */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .header-container {
   display: flex;
@@ -129,6 +149,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  font-weight: 400;
   color: var(--color-grey);
   display: block;
   padding: 24px 0;
@@ -140,9 +161,11 @@ address {
 /* ===============================HERO SECTION================================ */
 
 .hero {
-  background: rgba(46, 47, 66, 0.7) url(../images/people-in-office.jpg)
-    no-repeat center center;
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-in-office.jpg) no-repeat center;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero-text {
   font-weight: 700;
@@ -156,13 +179,9 @@ address {
   margin: 0 auto 48px;
 }
 .primary-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: var(--color-white);
   background-color: var(--color-blue);
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
 
   padding: 16px 32px;
   border-radius: 4px;
@@ -191,6 +210,15 @@ address {
 .adv-list-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+.adv-list-icon-bg {
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .main-title {
   font-weight: 500;
   font-size: 20px;
@@ -212,16 +240,6 @@ address {
 .features {
   padding-bottom: 120px;
 }
-.features-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--color-navy);
-  margin-bottom: 72px;
-}
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -237,16 +255,6 @@ address {
 .team {
   background-color: var(--ghost-white);
   padding: 120px 0;
-}
-.team-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--color-navy);
-  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -279,9 +287,48 @@ address {
   letter-spacing: 0.02em;
   color: var(--color-grey);
   font-weight: 400;
+  margin-bottom: 8px;
+}
+.team-social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.team-social-link {
+  border-radius: 50%;
+  background: #4d5ae5;
+  width: 40px;
+  height: 40px;
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ===============================/TEAM SECTION================================ */
 
+/* ===============================CUSTOMERS SECTION============================ */
+.customers {
+  padding: 120px 0;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1128px;
+  gap: 24px;
+}
+.customers-links {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  height: 88px;
+  flex-basis: calc((100% - 120px) / 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ==============================/CUSTOMERS SECTION============================ */
 /* ======================================FOOTER================================ */
 
 .footer {
@@ -292,8 +339,17 @@ address {
   background-color: var(--color-navy);
   padding: 100px 0;
 }
-.footer-logo-link {
-  display: inline-block;
+.footer-container {
+  display: flex;
+}
+.footer-signature {
+  max-width: 264px;
+  max-height: 112px;
+  margin-right: 120px;
+}
+.footer-logo-link,
+.social-text-footer {
+  display: block;
   margin-bottom: 16px;
 }
 .logo-footer {
@@ -301,6 +357,13 @@ address {
 }
 .footer-text {
   max-width: 264px;
+}
+.social-media-footer {
+  max-width: 208px;
+  max-height: 80px;
+}
+.social-footer {
+  gap: 16px;
 }
 /* =====================================/FOOTER================================ */
 
@@ -315,12 +378,9 @@ address {
   margin-bottom: 72px;
 }
 .filter-btn {
-  font-family: "Roboto", Sans-serif;
+  font-family: inherit;
   cursor: pointer;
   padding: 12px 24px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-blue);
   background-color: var(--ghost-white);
