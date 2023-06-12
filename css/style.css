@@ -140,7 +140,6 @@ address {
 }
 /* ================================/NAVIGATION================================ */
 /* ====================================ADDRESS================================ */
-
 .address-list {
   display: flex;
   align-items: center;
@@ -194,8 +193,6 @@ address {
   border: none;
   display: block;
   margin: 0 auto;
-  min-width: 169px;
-  min-height: 56px;
 }
 .primary-btn:hover,
 .primary-btn:focus,
@@ -209,16 +206,16 @@ address {
 .advantages {
   padding: 120px 0;
 }
-.adv-list {
+.advan-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
-.adv-list-item {
+.advan-list-item {
   flex-basis: calc((100% - 72px) / 4);
 }
-.adv-list-icon-bg {
+.advan-list-icon-bg {
   height: 112px;
   display: flex;
   justify-content: center;
@@ -307,8 +304,6 @@ address {
   background: #4d5ae5;
   width: 40px;
   height: 40px;
-}
-.team-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,8 +365,8 @@ address {
   align-items: baseline;
 }
 .footer-signature {
-  max-width: 264px;
-  max-height: 112px;
+  /* max-width: 264px; */
+  /* max-height: 112px; */
   margin-right: 120px;
 }
 .footer-logo-link {
@@ -391,8 +386,8 @@ address {
   max-width: 264px;
 }
 .social-media-footer {
-  max-width: 208px;
-  max-height: 80px;
+  /* max-width: 208px;
+  max-height: 80px; */
 }
 .social-footer {
   gap: 16px;
