@@ -201,21 +201,21 @@ address {
   background-color: var(--color-hover);
 }
 /* ===============================/HERO SECTION================================ */
-/* ==========================ADVANTAGES SECTION================================ */
+/* ==========================ODDS SECTION================================ */
 
-.advantages {
+.odds {
   padding: 120px 0;
 }
-.advan-list {
+.odds-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
-.advan-list-item {
+.odds-list-item {
   flex-basis: calc((100% - 72px) / 4);
 }
-.advan-list-icon-bg {
+.odds-list-icon-bg {
   height: 112px;
   display: flex;
   justify-content: center;
@@ -239,7 +239,7 @@ address {
   color: var(--color-grey);
   font-weight: 400;
 }
-/* =========================/ADVANTAGES SECTION================================ */
+/* =========================/ODDS SECTION================================ */
 /* ==========================FEATURES SECTION================================ */
 
 .features {
